@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model owners {
+  id      Int       @id @default(autoincrement())
+  name    String    @db.VarChar(255)
+  puppies puppies[]
+}
+
+model puppies {
+  id             Int              @id @default(autoincrement())
+  name           String           @db.VarChar(255)
+  email          String           @unique @db.VarChar(255)
+  isCute         Boolean?         @default(true)
+  age            Int?
+  ownerId        Int?
+  owners         owners?          @relation(fields: [ownerId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  puppies_tricks puppies_tricks[]
+}
+
+model puppies_tricks {
+  id       Int      @id @default(autoincrement())
+  puppy_id Int?
+  trick_id Int?
+  puppies  puppies? @relation(fields: [puppy_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  tricks   tricks?  @relation(fields: [trick_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([puppy_id, trick_id])
+}
+
+model tricks {
+  id             Int              @id @default(autoincrement())
+  title          String?          @db.VarChar
+  puppies_tricks puppies_tricks[]
+}
