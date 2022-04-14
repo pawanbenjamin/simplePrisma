@@ -4,16 +4,20 @@ const { puppies } = require('./seedData')
 
 const prisma = new PrismaClient()
 
-// const getPups = async () => {
-//   const pups = await prisma.puppies.findMany({
-//     include: {
-//       puppies_tricks: true,
-//     },
-//   })
-//   console.log(JSON.stringify(pups, null, 4))
-// }
+const getPups = async () => {
+  const pups = await prisma.puppies.findMany({
+    include: {
+      puppies_tricks: {
+        include: {
+          tricks: true,
+        },
+      },
+    },
+  })
+  console.log(JSON.stringify(pups, null, 4))
+}
 
-// getPups()
+getPups()
 
 // const getSinglePup = async (pupId) => {
 //   const pup = await prisma.puppies.findUnique({
@@ -21,10 +25,14 @@ const prisma = new PrismaClient()
 //       id: pupId,
 //     },
 //     include: {
-//       puppies_tricks: true,
+//       puppies_tricks: {
+//         include: {
+//           tricks: true,
+//         },
+//       },
 //     },
 //   })
-//   console.log(pup)
+//   console.log(JSON.stringify(pup, null, 4))
 // }
 
 // getSinglePup(3)
