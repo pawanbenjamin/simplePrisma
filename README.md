@@ -1,4 +1,4 @@
-# simplePrisma, Just the Prisma Basics
+# simplePrisma, Just the Basics
 
 #### Setup a new Prisma project
   ```npx prisma init```
