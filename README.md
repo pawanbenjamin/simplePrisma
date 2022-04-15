@@ -2,7 +2,7 @@
 
 ## This repo servers as a starter repo using Prisma with PostgreSQL, and Express
 
-##### To Try and finish building functionality locally:
+##### To run this locally:
 
 ```git clone git@github.com:pawanbenjamin/simplePrisma.git```
 
