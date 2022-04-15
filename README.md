@@ -63,7 +63,7 @@ Don't forget in your `package.json` add a prisma portion, with a seed command ru
   
  ##### Pull the schema from an existing database, updating the Prisma schema
   ```npx prisma db pull```
-
+Make sure you have your DATABASE_URL in you ```.env``` file
 
 ##### Push the Prisma schema state to the database
   ```npx prisma db push```
