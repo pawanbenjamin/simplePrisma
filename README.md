@@ -1,4 +1,4 @@
-# simplePrisma, Just the Basics
+# Prisma ORM, Just the Basics
 
 ## This repo servers as a starter repo using Prisma with PostgreSQL, and Express
 
