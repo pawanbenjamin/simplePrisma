@@ -13,7 +13,7 @@
 Make sure to create a ```.env``` file with
 ```DATABASE_URL="postgresql://janedoe:mypassword@localhost:5432/mydb?schema=public"```
 
-##### DO NOT CHECK INTO GITHUB!!!!
+##### DO NOT CHECK YOUR .ENV FILE INTO GITHUB!!!!
 
 ###### For starting your own projects:
 
