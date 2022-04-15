@@ -41,7 +41,7 @@ When you want to use prisma migrate dev or prisma migrate reset without seeding,
 #### Don't forget to ```npx prisma db seed```
 
 
-### Deploy
+### Deployment:
 
 ```heroku apps:create your-app-name```
 
