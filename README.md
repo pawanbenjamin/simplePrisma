@@ -15,6 +15,7 @@ Make sure to create a ```.env``` file with
 
 ### Straight from the Prisma Docs:
 
+#### If you want to set up a project with Prisma Locally:
 ##### Setup a new Prisma project
   ```npx prisma init```
 
@@ -52,7 +53,7 @@ When you want to use prisma migrate dev or prisma migrate reset without seeding,
 #### Don't forget to ```npx prisma db seed```
 
 
-## Deployment:
+# Deployment this Application via Heroku:
 
 ```heroku apps:create your-app-name```
 
