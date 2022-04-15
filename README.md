@@ -1,6 +1,6 @@
 # Prisma ORM, Just the Basics
 
-## This repo servers as a starter repo using Prisma with PostgreSQL, and Express
+## This repo servers as an example repo using Prisma with PostgreSQL, and Express
 
 ##### To run this locally:
 
@@ -15,7 +15,9 @@ Make sure to create a ```.env``` file with
 
 ##### DO NOT CHECK INTO GITHUB!!!!
 
-Then you can build your schema in your ```prisma/schema.prisma``` file
+###### For starting your own projects:
+
+You can build your schema in your ```prisma/schema.prisma``` file
 
 To then perform the db migration:
 ```npx prisma migrate dev```
@@ -24,6 +26,11 @@ While you develop, you can also push changes by
 ```npx prisma db push```
 
 When seeding needed, run ```npx prisma db seed``` to run the seed file at ```db/seed.js```
+
+Don't forget in your `package.json` add a prisma portion, with a seed command running your seed file:
+
+![Screen Shot 2022-04-15 at 9 25 52 AM](https://user-images.githubusercontent.com/62716484/163576247-97c3d2dc-c251-425f-a102-df544a15791d.png)
+
 ##### This repo drops and builds tables before seeding
 
 ## The following is from the Prisma Docs:
