@@ -1,6 +1,6 @@
 # simplePrisma, Just the Basics
 
-This repo servers as a starter, of a simple relational db schema, served with express
+## This repo servers as a starter repo using Prisma with PostgreSQL, and Express
 
 ##### To Try and finish building functionality locally:
 
@@ -13,9 +13,18 @@ This repo servers as a starter, of a simple relational db schema, served with ex
 Make sure to create a ```.env``` file with
 ```DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=myschema"``` DO NOT CHECK INTO GITHUB
 
-### Straight from the Prisma Docs:
+Then you can run
 
-#### If you want to set up a project with Prisma Locally:
+```npx prisma migrate dev```
+
+While you develop, you can push changes by
+```npx prisma db push```
+
+then run ```npx prisma db seed``` to run the seed file at ```db/seed.js```
+
+### The following is from the Prisma Docs:
+
+#### If you want to set up a project with Prisma From Scratch:
 ##### Setup a new Prisma project
   ```npx prisma init```
 
