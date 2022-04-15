@@ -17,3 +17,26 @@
 
 #### Push the Prisma schema state to the database
   ```npx prisma db push```
+
+```prisma migrate dev``` (seed command is run here as well as pushing our schema to your db)
+
+or ```prisma migrate reset```
+Prisma Migrate resets the database and triggers seeding in the following scenarios:
+
+You manually run the ```prisma migrate reset``` CLI command.
+The database is reset interactively in the context of using prisma migrate dev - for example,
+as a result of migration history conflicts or database schema drift.
+When you want to use prisma migrate dev or prisma migrate reset without seeding, you can pass the --skip-seed flag.
+
+```npx prisma db seed```
+
+
+
+
+deploy
+
+```heroku apps:create your-app-name```
+
+```heroku addons:create heroku-postgresql:hobby-dev```
+
+```git push heroku main```
