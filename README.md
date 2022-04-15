@@ -11,8 +11,9 @@
  ```createdb pupsNstuff``` locally
 
 Make sure to create a ```.env``` file with
-```DATABASE_URL="postgresql://janedoe:mypassword@localhost:5432/mydb?schema=public"``` 
-DO NOT CHECK INTO GITHUB!!!!
+```DATABASE_URL="postgresql://janedoe:mypassword@localhost:5432/mydb?schema=public"```
+
+##### DO NOT CHECK INTO GITHUB!!!!
 
 Then you can run
 
@@ -77,6 +78,6 @@ Prisma Migrate resets the database and triggers seeding in the following scenari
 
 or 
 
-```heroku run npx prisma db push```
+```heroku run npx prisma db push```,
 ```heroku run npx prisma db seed```
-`
+
