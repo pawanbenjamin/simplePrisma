@@ -4,8 +4,10 @@ This repo servers as a starter, of a simple relational db schema, served with ex
 
 ##### To Try and finish building functionality locally:
 
-```git clone git@github.com:pawanbenjamin/simplePrisma.git``
+```git clone git@github.com:pawanbenjamin/simplePrisma.git```
+
 ```npm install``
+
  ```createdb pupsNstuff``` locally
 
 Make sure to create a ```.env``` file with
