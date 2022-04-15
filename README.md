@@ -6,7 +6,7 @@
 #### Generate artifacts (e.g. Prisma Client)
   ```npx prisma generate```
   so you can:
-<img width="450" alt="Screen Shot 2022-04-14 at 8 54 09 PM" src="https://user-images.githubusercontent.com/62716484/163500929-976423a9-7a2b-4144-a768-5db6c2fd3a08.png">
+<img width="200" alt="Screen Shot 2022-04-14 at 8 54 09 PM" src="https://user-images.githubusercontent.com/62716484/163500929-976423a9-7a2b-4144-a768-5db6c2fd3a08.png">
 
 #### Browse your data
   ```npx prisma studio```
