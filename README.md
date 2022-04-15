@@ -27,7 +27,16 @@ When seeding needed, run ```npx prisma db seed``` to run the seed file at ```db/
 ##### This repo drops and builds tables before seeding
 
 ## The following is from the Prisma Docs:
-[DOCS](https://www.prisma.io/docs/)
+
+[MAIN DOCS](https://www.prisma.io/docs/)
+
+
+[API SPECIFIC DOCS](https://www.prisma.io/docs/reference/api-reference/prisma-client-reference)
+
+
+[CRUD OPERATIONS](https://www.prisma.io/docs/concepts/components/prisma-client/crud)
+
+
 #### If you want to set up a project with Prisma From Scratch:
 ##### Setup a new Prisma project
   ```npx prisma init```
