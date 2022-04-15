@@ -1,13 +1,18 @@
 # simplePrisma, Just the Basics
 
+This repo servers as a starter, of a simple relational db schema, served with express
+
+### From the Prisma Docs:
+
 #### Setup a new Prisma project
   ```npx prisma init```
 
 #### Generate artifacts (e.g. Prisma Client)
   ```npx prisma generate```
-  so you can:
+  (so you can):
   
 <img width="400" alt="Screen Shot 2022-04-14 at 8 54 09 PM" src="https://user-images.githubusercontent.com/62716484/163500929-976423a9-7a2b-4144-a768-5db6c2fd3a08.png">
+
 
 #### Browse your data
   ```npx prisma studio```
@@ -33,7 +38,7 @@ The database is reset interactively in the context of using prisma migrate dev -
 as a result of migration history conflicts or database schema drift.
 When you want to use prisma migrate dev or prisma migrate reset without seeding, you can pass the --skip-seed flag.
 
-Don't forget to ```npx prisma db seed```
+#### Don't forget to ```npx prisma db seed```
 
 
 ### Deploy
