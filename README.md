@@ -61,7 +61,7 @@ Prisma Migrate resets the database and triggers seeding in the following scenari
 2.The database is reset interactively in the context of using prisma migrate dev 
    - for example, as a result of migration history conflicts or database schema drift.
 
----> When you want to use ```npx prisma migrate dev``` or ```npx prisma migrate reset`` without seeding, 
+---> When you want to use ```npx prisma migrate dev``` or ```npx prisma migrate reset``` without seeding, 
 ---> you can pass the ``` --skip-seed``` flag.
 
 
