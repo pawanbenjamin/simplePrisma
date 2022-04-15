@@ -1,6 +1,7 @@
 # simplePrisma, Just the Basics
 
 This repo servers as a starter, of a simple relational db schema, served with express
+you just need to ```createdb pupsNstuff``` locally
 
 ### From the Prisma Docs:
 
