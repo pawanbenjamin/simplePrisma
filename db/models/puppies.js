@@ -33,11 +33,12 @@ const getPupById = async (pupId) => {
 
 // getPupById(3)
 
-const createPuppy = async () => {
+const createPuppy = async ({ name, email, age }) => {
   const puppy = await prisma.puppies.create({
     data: {
-      name: 'Jerry',
-      email: 'Jerry@Jerry.Jerry',
+      name,
+      email,
+      age,
     },
   })
   return puppy
