@@ -15,6 +15,7 @@
  #### Pull the schema from an existing database, updating the Prisma schema
   ```npx prisma db pull```
 
+
 #### Push the Prisma schema state to the database
   ```npx prisma db push```
 
@@ -40,3 +41,5 @@ deploy
 ```heroku addons:create heroku-postgresql:hobby-dev```
 
 ```git push heroku main```
+
+```prisma migrate deploy```
