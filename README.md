@@ -15,17 +15,19 @@ Make sure to create a ```.env``` file with
 
 ##### DO NOT CHECK INTO GITHUB!!!!
 
-Then you can run
+Then you can build your schema in your ```prisma/schema.prisma``` file
 
+To then perform the db migration:
 ```npx prisma migrate dev```
 
-While you develop, you can push changes by
+While you develop, you can also push changes by
 ```npx prisma db push```
 
-then run ```npx prisma db seed``` to run the seed file at ```db/seed.js```
+When seeding needed, run ```npx prisma db seed``` to run the seed file at ```db/seed.js```
+##### This repo drops and builds tables before seeding
 
-### The following is from the Prisma Docs:
-
+## The following is from the Prisma Docs:
+[DOCS](https://www.prisma.io/docs/)
 #### If you want to set up a project with Prisma From Scratch:
 ##### Setup a new Prisma project
   ```npx prisma init```
