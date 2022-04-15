@@ -1,7 +1,10 @@
 # simplePrisma, Just the Basics
 
 This repo servers as a starter, of a simple relational db schema, served with express
-you just need to ```createdb pupsNstuff``` locally
+you need to ```createdb pupsNstuff``` locally
+
+also, create a ```.env``` file with
+```DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=myschema"```
 
 ### From the Prisma Docs:
 
