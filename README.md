@@ -15,6 +15,8 @@ Make sure to create a ```.env``` file with the following: (change to your userna
 
 ##### DO NOT CHECK YOUR .ENV FILE INTO GITHUB!!!!
 
+There is a file in ```db/demo``` which goes through basic crud queries
+
 ## For starting your own projects from scratch:
 ```npm install prisma @prisma/client```
 
