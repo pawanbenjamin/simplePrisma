@@ -11,7 +11,7 @@
 ```npm install```
 
 Make sure to create a ```.env``` file with the following: (change to your username and password if you have one)
-```DATABASE_URL="postgresql://janedoe:mypassword@localhost:5432/<your db name>?schema=public"```
+```DATABASE_URL="postgresql://janedoe:mypassword@localhost:5432/pupsNstuff?schema=public"```
 
 ##### DO NOT CHECK YOUR .ENV FILE INTO GITHUB!!!!
 
@@ -21,6 +21,9 @@ There is a file in ```db/demo``` which goes through basic crud queries
 ```npm install prisma @prisma/client```
 
   ```npx prisma init```
+  
+Change the db url in the newly generated ```.env``` file
+```DATABASE_URL="postgresql://janedoe:mypassword@localhost:5432/<your db name>?schema=public"```
 
    ```npx prisma generate```
    
