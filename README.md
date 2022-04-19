@@ -20,23 +20,32 @@ Make sure to create a ```.env``` file with the following: (change to your userna
   ```npx prisma init```
 
    ```npx prisma generate```
+   
+So later in your application, you can:
+  
+<img width="400" alt="Screen Shot 2022-04-14 at 8 54 09 PM" src="https://user-images.githubusercontent.com/62716484/163500929-976423a9-7a2b-4144-a768-5db6c2fd3a08.png">
+
 
 You can build your schema in your ```prisma/schema.prisma``` file
 
-To then perform the db migration:
+To then perform the db migration (including running a prisma seed command if any exists) ->
 ```npx prisma migrate dev```
+
+You can add this command in your `package.json` 
+
+All you need to do is add a prisma portion, with a seed command running your local seed file:
+
+![Screen Shot 2022-04-15 at 9 25 52 AM](https://user-images.githubusercontent.com/62716484/163576247-97c3d2dc-c251-425f-a102-df544a15791d.png)
 
 While you develop, you can also push changes by
 ```npx prisma db push```
 
 When seeding needed, run ```npx prisma db seed``` to run the seed file at ```db/seed.js```
 
-Don't forget in your `package.json` add a prisma portion, with a seed command running your seed file:
 
-![Screen Shot 2022-04-15 at 9 25 52 AM](https://user-images.githubusercontent.com/62716484/163576247-97c3d2dc-c251-425f-a102-df544a15791d.png)
 
-##### This repo drops and builds tables before seeding
-
+### Note:
+This repo drops and builds tables before running the seed file with ```prisma.$executeRaw```
 ## The following is from the Prisma Docs:
 
 [MAIN DOCS](https://www.prisma.io/docs/)
@@ -54,15 +63,12 @@ Don't forget in your `package.json` add a prisma portion, with a seed command ru
 
 ##### Generate artifacts (e.g. Prisma Client)
   ```npx prisma generate```
-  (so you can):
-  
-<img width="400" alt="Screen Shot 2022-04-14 at 8 54 09 PM" src="https://user-images.githubusercontent.com/62716484/163500929-976423a9-7a2b-4144-a768-5db6c2fd3a08.png">
 
 
 ##### Browse your data
   ```npx prisma studio```
 
-##### Create migrations from your Prisma schema, apply them to the database, generate artifacts (e.g. Prisma Client)
+##### Create migrations from your Prisma schema, apply them to the database, seed data, and generate artifacts (e.g. Prisma Client)
   ```npx prisma migrate dev```
   
  ##### Pull the schema from an existing database, updating the Prisma schema
