@@ -55,11 +55,19 @@ const seedDb = async () => {
   }
 }
 
+// const alterTables = async () => {
+//   await prisma.$executeRaw`
+//     ALTER TABLE puppies
+//     ADD catch_phrase AS ('I am ' + name + ', and I am ' + age + 'years old!');
+//   `
+// }
+
 const initDb = async () => {
   try {
     await dropTables()
     await createTables()
     await seedDb()
+    // await alterTables()
   } catch (error) {
     console.error(error)
   } finally {
