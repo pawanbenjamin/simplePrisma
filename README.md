@@ -4,18 +4,18 @@
 
 ##### To run this locally:
 
+ ```createdb pupsNstuff``` 
+
 ```git clone git@github.com:pawanbenjamin/simplePrisma.git```
 
 ```npm install```
 
- ```createdb pupsNstuff``` locally
-
-Make sure to create a ```.env``` file with
-```DATABASE_URL="postgresql://janedoe:mypassword@localhost:5432/mydb?schema=public"```
+Make sure to create a ```.env``` file with the following: (change to your username and password if you have one)
+```DATABASE_URL="postgresql://janedoe:mypassword@localhost:5432/<your db name>?schema=public"```
 
 ##### DO NOT CHECK YOUR .ENV FILE INTO GITHUB!!!!
 
-###### For starting your own projects from scratch:
+## For starting your own projects from scratch:
 
   ```npx prisma init```
 
