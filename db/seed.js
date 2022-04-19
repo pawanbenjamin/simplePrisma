@@ -1,8 +1,6 @@
 const prisma = require('./prisma')
 
-const { Puppies } = require('./models')
-
-const { puppies } = require('./seedData')
+const { puppies, owners } = require('./seedData')
 
 const dropTables = async () => {
   console.log(`Dropping tables...`)
@@ -44,9 +42,17 @@ const createTables = async () => {
 }
 
 const seedDb = async () => {
+  console.log('creating owners...')
+  for (const owner of owners) {
+    const createdOwner = await prisma.owners.create({ data: owner })
+    console.log(createdOwner)
+  }
+
   console.log('creating pups...')
-  const pups = await Promise.all(puppies.map(Puppies.createPuppy))
-  console.log('Pups:', pups)
+  for (const puppy of puppies) {
+    const pup = await prisma.puppies.create({ data: puppy })
+    console.log(pup)
+  }
 }
 
 const initDb = async () => {
