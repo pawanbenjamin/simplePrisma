@@ -16,6 +16,7 @@ Make sure to create a ```.env``` file with the following: (change to your userna
 ##### DO NOT CHECK YOUR .ENV FILE INTO GITHUB!!!!
 
 ## For starting your own projects from scratch:
+```npm install prisma @prisma/client```
 
   ```npx prisma init```
 
@@ -32,7 +33,6 @@ To then perform the db migration (including running a prisma seed command if any
 ```npx prisma migrate dev```
 
 You can add this command in your `package.json` 
-
 All you need to do is add a prisma portion, with a seed command running your local seed file:
 
 ![Screen Shot 2022-04-15 at 9 25 52 AM](https://user-images.githubusercontent.com/62716484/163576247-97c3d2dc-c251-425f-a102-df544a15791d.png)
@@ -40,7 +40,7 @@ All you need to do is add a prisma portion, with a seed command running your loc
 While you develop, you can also push changes by
 ```npx prisma db push```
 
-When seeding needed, run ```npx prisma db seed``` to run the seed file at ```db/seed.js```
+To only run the seed script ```npx prisma db seed```
 
 
 
