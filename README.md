@@ -15,7 +15,11 @@ Make sure to create a ```.env``` file with
 
 ##### DO NOT CHECK YOUR .ENV FILE INTO GITHUB!!!!
 
-###### For starting your own projects:
+###### For starting your own projects from scratch:
+
+  ```npx prisma init```
+
+   ```npx prisma generate```
 
 You can build your schema in your ```prisma/schema.prisma``` file
 
