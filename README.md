@@ -8,6 +8,8 @@
 
 ```git clone git@github.com:pawanbenjamin/simplePrisma.git```
 
+```cd simplePrisma```
+
 ```npm install```
 
 Make sure to create a ```.env``` file with the following: (change to your username and password if you have one)
