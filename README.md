@@ -2,7 +2,7 @@
 
 ## This repo servers as an example repo using Prisma with PostgreSQL, and Express
 
-##### To run this locally:
+##### To run repository this locally:
 
  ```createdb pupsNstuff``` 
 
